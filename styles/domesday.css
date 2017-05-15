@@ -15,7 +15,7 @@ Created:      01st December 2009
 /*end*/
 
 #domesday-wrapper #main-navigation {border-bottom: #c41d28 4px solid;	}
-#domesday-wrapper #wrapper #homepage-banner {background-image: url(http://placehold.it/960x250); border-bottom:#900 4px solid; height: 170px;}
+#domesday-wrapper #wrapper #homepage-banner {background-image: url(../img/domesday-banner-01.jpg); border-bottom:#900 4px solid; height: 170px;}
 #domesday-wrapper #wrapper #homepage-banner img{margin: 20px 0 0 20px;}
 #domesday-wrapper #wrapper #homepage-banner h1  {visibility: hidden;}
 html>body #domesday-wrapper #wrapper #homepage-banner h1{*position: static;}
