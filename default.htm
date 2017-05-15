@@ -28,7 +28,7 @@
     <meta name="WT.cg_n" content="Research, education and online exhibitions"/>
     <meta name="TNAcategory" content="Records"/>
     <meta name="TNAcategory" content="Exhibitions"/>
-    <link href="/css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/base.css" rel="stylesheet" type="text/css"/>
     <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
     <!--<link href="/css/domesday.css" rel="stylesheet" type="text/css" />-->
@@ -81,15 +81,12 @@
 
     <div id="wrapper">
 
-        <div id="homepage-banner"><img src="images/Domesday-logo.jpg" alt="Domesday logo"/>
-            <h1>Domesday Book &ndash; Britain's finest treasure</h1>
-
-        </div>
+        <div id="homepage-banner"></div>
 
         <div id="primary-content">
 
             <div id="intro">
-
+                <h1>Domesday Book &ndash; Britain's finest treasure</h1>
                 <p>Domesday is Britain’s earliest public record. It contains the results of a huge survey of land and
                     landholding commissioned by William I in 1085. Domesday is by the far the most complete record of
                     pre-industrial society to survive anywhere in the world and provides a unique window on the medieval
@@ -177,6 +174,33 @@
             </div>
 
         </div>
+        <div id="secondary-content">
+            <div class="holder">
+                <h2 class="header-no-link">Bookshop</h2>
+                <a href="http://bookshop.nationalarchives.gov.uk/9780141439945/Domesday-Book-%3A-A-Complete-Translation/">
+                    <div class="image-wrapper">
+                        <img src="img/domesday-%20the%20complete%20translation.jpg" alt="domesday-the-complete-translation"/>
+                    </div>
+                </a>
+                <p>
+                    <a href="http://bookshop.nationalarchives.gov.uk/9780141439945/Domesday-Book-%3A-A-Complete-Translation/"
+                       target="_self">Domesday Book : A Complete Translation</a> is one of the most famous documents in
+                    English history.</p>
+            </div>
+            <div class="holder">
+                <h2 class="header-no-link">Lincoln Castle</h2>
+                <a href="https://www.lincolncastle.com/domesday">
+                    <div class="image-wrapper">
+                        <img src="img/domesday-lincolncastle-1200-x-630.jpg" alt="lincoln-castle-event">
+                    </div>
+                </a>
+                <p>This is a rare and unmissable opportunity to see Domesday on display, in a castle built by the same
+                    king that ordered the document. The iconic document will be on display in the David P J Ross Magna
+                    Carta Vault.</p>
+            </div>
+        </div>
+        <div class="clearing"></div>
+    </div>
 
     </div>
 
@@ -204,6 +228,22 @@
 
 <!-- footer -->
 <!--#include virtual="/includes/footercms.inc" -->
+<script>
+    function equalHeight(group) {
+        maxHeight = 0;
+        group.each(function() {
+            thisHeight = $(this).height();
+            if(thisHeight > maxHeight) {
+                maxHeight = thisHeight;
+            }
+        });
+        group.height(maxHeight);
+    }
+    $(document).ready(function() {
+        equalHeight($(".content-boxes div"));
+        equalHeight($("#secondary-content .holder"));
+    });
+</script>
 
 </body>
 </html>
