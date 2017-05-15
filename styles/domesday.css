@@ -176,6 +176,11 @@ ul.last-item li {
     font-weight: normal;
 }
 
+#secondary-content .holder:hover {
+    background-color: rgb(249, 249, 249);
+    border: 1px dotted #a5a5a5;
+}
+
 #primary-content .left, #primary-content li {
     border-top: 1px dotted #dddddd;
 }
@@ -233,7 +238,7 @@ ul.last-item li {
 #secondary-content .holder {
     margin: 0 0 1em 0;
     padding: 4px;
-    border: none;
+    border: 1px dotted #ddd;
     width: 49.57%;
     float: left;
     box-sizing: border-box;
