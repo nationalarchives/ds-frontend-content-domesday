@@ -51,7 +51,7 @@ html>body #domesday-wrapper #wrapper #banner img {*float:left;}
 #domesday-wrapper #wrapper #primary-content {padding-bottom:12px;}
 /*#domesday-wrapper #wrapper #primary-content ul {clear:left; float:none;  padding: 12px 0 0 11px; margin: 0 40px 20px 40px; }
 #domesday-wrapper #wrapper #primary-content ul li{float:none!important; list-style-position: outside; list-style-type: disc; padding: 12px 8px; width:auto!important;}*/
-#domesday-wrapper #wrapper #primary-content h2 {background:none; font:1.2em/120% Verdana, Arial, Helvetica, sans-serif normal; font-weight: 700; padding:8px 10px 8px 20px;  border-top:#bfbfbf 1px dotted; margin:0;  }
+#domesday-wrapper #wrapper #primary-content h2 {background:none; font:1.2em/120% Verdana, Arial, Helvetica, sans-serif normal; font-weight: normal; padding:8px 10px 8px 20px;  border-top:#bfbfbf 1px dotted; margin:0;  }
 #domesday-wrapper #wrapper #primary-content h2 {margin-top: 0!important; border: none!important; }
 
 /*#wrapper #main-content #left-nav .selected-page a {background-color: #900!important;}*/
@@ -113,7 +113,8 @@ h1 {
 }
 h2 {
     font-family: 'Bitter', serif;
-    font-size: 1.4em;
+    font-size: 1.6em;
+    font-weight: normal;
 }
 
 #primary-content #intro {
@@ -153,7 +154,6 @@ ul.last-item li {
     margin: 0 20px 20px 0;
 }
 #domesday-wrapper #secondary-content .holder .header-no-link {
-    background-color: #e5e5e5;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -169,6 +169,11 @@ ul.last-item li {
     padding-bottom: 1em;
     font-size: 1.1em;
     line-height: 1.6em;
+}
+
+#secondary-content .holder h2 {
+    background: none ;
+    font-weight: normal;
 }
 
 #primary-content .left, #primary-content li {
