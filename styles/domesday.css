@@ -104,6 +104,18 @@ div.gamepanel  {background-color: #e8e8c7; border:solid 1px #666633; display:inl
 body {
     box-shadow: 5px 0 15px -4px #666, -5px 0 8px -4px #666;
 }
+a:visited, a:focus, a:active {
+    color: #2A5DB0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    color: #2A5DB0;
+    text-decoration: none;
+}
+
 #wrapper {
     float: none;
 }
@@ -226,7 +238,27 @@ ul.last-item li {
 .content-boxes > div:hover {
     background-color: rgb(249, 249, 249);
     border:1px dotted #a5a5a5;
-
+    cursor: pointer;
+}
+.content-boxes > div > a:hover > h2 {
+    color: #2A5DB0;
+    text-decoration: underline;
+}
+.content-boxes > div > a > p {
+    text-decoration: none;
+    color: #000;
+}
+#secondary-content > .holder > a > h2 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 10px;
+    color: #000;
+}
+#secondary-content > .holder > a > p {
+    color: #000;
+}
+#secondary-content > .holder > a:hover > h2 {
+    text-decoration: underline;
 }
 
 #secondary-content {
